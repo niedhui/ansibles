@@ -1,0 +1,8 @@
+---
+- apt:
+    name:
+      - python3-passlib
+- htpasswd:
+    path: "{{ path }}"
+    name: "{{ user_name }}"
+    password: "{{ user_password }}"

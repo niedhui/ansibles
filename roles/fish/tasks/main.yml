@@ -1,0 +1,8 @@
+---
+- apt: name=fish
+- lineinfile:
+    path: "{{ansible_env.HOME}}/.config/fish/config.fish"
+    line: fish_vi_key_bindings
+    owner: "{{ansible_user}}"
+- name: "change shell"
+  user: name={{ansible_user}} shell=/usr/bin/fish

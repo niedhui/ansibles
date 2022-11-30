@@ -1,0 +1,4 @@
+---
+user_name: admin
+user_password: "-please-change-this-"
+path: /etc/nginx/htpasswd
